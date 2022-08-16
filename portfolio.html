@@ -18,7 +18,9 @@
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+      
     <header>
+       <div class="container">
       <nav class="site-nav">
          <a class="logo-head link" href="/index.html"
               ><span class="blue-logo">Web</span>Studio</a
@@ -28,7 +30,7 @@
           <li class="menu"><a class="site-nav__link" href="./index.html">Студія</a></li>
 
           <li class="menu">
-            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="menu"><a class="site-nav__link" href="">Контакти</a></li>
         </ul>
@@ -45,25 +47,28 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
-    <main>
-      <section>
+    <main> 
+     
+      <section class="section main-portfolio">
+         <div class="container">
         <h1  class="title none-display">Портфолiо</h1>
-        <ul class="list">
-          <li><button type="button" class="button">Усі</button></li>
-          <li><button type="button" class="button">Веб-сайти</button></li>
-          <li><button type="button" class="button">Додатки</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+        <ul class="list filter">
+          <li class="filter-button"><button type="button" class="button">Усі</button></li>
+          <li class="filter-button"><button type="button" class="button">Веб-сайти</button></li>
+          <li class="filter-button"><button type="button" class="button">Додатки</button></li>
+          <li class="filter-button"><button type="button" class="button">Дизайн</button></li>
+          <li class="filter-button"><button type="button" class="button">Маркетинг</button></li>
         </ul>
         <ul class="cards list">
           <li class="cards-product">
-            <img src="./images/techno.jpg" alt="Ноутбук" width="370" />
+            <img class="image" src="./images/techno.jpg" alt="Ноутбук" width="370" />
             <h4 class="card-name">Технокряк</h4>
             <p class="description">Веб-сайт</p>
           </li>
           <li class="cards-product">
-            <img
+            <img class="image"
               src="./images/goldenstars.jpg"
               alt="Гра в баскетбол"
               width="370"
@@ -72,37 +77,37 @@
             <p class="description">Дизайн</p>
           </li>
           <li class="cards-product">
-            <img src="./images/seafood.jpg" alt="Лого ресторану" width="370" />
+            <img class="image" src="./images/seafood.jpg" alt="Лого ресторану" width="370" />
             <h4 class="card-name">Ресторан Seafood</h4>
             <p class="description">Додаток</p>
           </li>
           <li class="cards-product">
-            <img src="./images/prime.jpg" alt="Навушники" width="370" />
+            <img class="image" src="./images/prime.jpg" alt="Навушники" width="370" />
             <h4 class="card-name">Проєкт Prime</h4>
             <p class="description">Маркетинг</p>
           </li>
           <li>
-            <img src="./images/boxes.jpg" alt="Дві коробки" width="370" />
+            <img class="image" src="./images/boxes.jpg" alt="Дві коробки" width="370" />
             <h4 class="card-name">Проєкт Boxes</h4>
             <p class="description">Додаток</p>
           </li>
           <li class="cards-product">
-            <img src="./images/border.jpg" alt="Моноблок" width="370" />
+            <img class="image" src="./images/border.jpg" alt="Моноблок" width="370" />
             <h4 class="card-name">Inspiration has no Borders</h4>
             <p class="description">Веб-сайт</p>
           </li>
           <li class="cards-product">
-            <img src="./images/limited.jpg" alt="Відкрита книга" width="370" />
+            <img class="image" src="./images/limited.jpg" alt="Відкрита книга" width="370" />
             <h4 class="card-name">Видання Limited Edition</h4>
             <p class="description">Дизайн</p>
           </li>
           <li class="cards-product">
-            <img src="./images/lab.jpg" alt="Логотип проекту" width="370" />
+            <img class="image" src="./images/lab.jpg" alt="Логотип проекту" width="370" />
             <h4 class="card-name">Проєкт LAB</h4>
             <p class="description">Маркетинг</p>
           </li>
           <li class="cards-product">
-            <img
+            <img class="image"
               src="./images/growing.jpg"
               alt="Відкритий ноутбук"
               width="370"
@@ -111,15 +116,17 @@
             <p class="description">Додаток</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="foot">
+       <div class="container">
       <a class="logo-foot link" href="/index.html"
         ><span class="blue-logo">Web</span>Studio</a
       >
       <address class="address">
-        <ul class="list">
-          <li class="list">
+        <ul class="list  address-list">
+          <li class="address-item">
             <a
               class="map link"
               href="https://goo.gl/maps/8eCghQY2oybn2GDY6"
@@ -128,18 +135,20 @@
               >бул. Леси Украинки, 26
             </a>
           </li>
-          <li>
+          <li class="address-item">
             <a class="foot-contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="address-item">
             <a class="foot-contact link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+      </div>
     </footer>
+    
   </body>
 </html>

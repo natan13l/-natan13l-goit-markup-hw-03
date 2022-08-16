@@ -17,9 +17,27 @@
 
   
 }
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+ul,
+ol {
     margin: 0;
     padding: 0;
+}
+.list {
+    list-style: none;
+}
+.button,
+.promo-button {
+    cursor: pointer;
 }
 body {
     background-color: var(--main-bgcolor);
@@ -29,25 +47,28 @@ body {
     font-size: 14px;
 }
 .container {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
-    width: 1600px;
-    outline: 2px blueviolet;
+    width: 1200px; */
     text-align: center;
+    
+    width: 1200px;
+        outline: 2px solid blueviolet;
+        margin: 0 auto;
 
 }
 .logo-head {
-    margin-right: 93px;
-    margin-left: 215px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-right: 93px;
+    padding-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 .list{
     margin: 0px;
 }
 .contacts:first-child{
-    margin-left: 344px;
+    margin-left: 93px;
 }
 .contacts:nth-child(2) {
      margin-left: 50px;
@@ -74,15 +95,17 @@ display: block;
  {
     text-decoration: none;
 }
+
+
 .head-contact {
     color: var(--pcolor);
 }
 .promo {
-    outline: 15px violet;
-    width: 1600px;
-    display: flex ;
+display: flex;
     flex-direction: column;
-}
+    align-items: center;
+  
+    text-align: center; }
 .promo, .foot {
     background-color: var(--bgcolor);
     
@@ -95,13 +118,18 @@ display: block;
 }
 .promo-button {
     padding: 0;
-
-    margin-top: 30px;
+     margin-top: 30px;
     margin-bottom: 200px;
     margin-left: 692px;
     margin-right: 692px;
     width: 216px;
     
+    border-radius: 4px;
+    color: var(--main-bgcolor);
+        background-color: var(--blue);
+        font-family: inherit;
+        font-weight: 700;
+        line-height: 1.88;
 }
 
 .promo-name,
@@ -123,24 +151,17 @@ display: block;
         text-transform: uppercase;
         color: #FFFFFF;
  
-}
-.promo-button {
-    color: var(--main-bgcolor);
-        background-color: var(--blue);
-        font-family: inherit;
-        font-weight: 700;
-        line-height: 1.88;
-    
-}
+}  
 .promo-button:hover,
 .promo-button:focus
 {
     background-color: #188CE8;
 }
-.skills {
-  background-color: violet;
-padding: 94px 215px;
-
+.section {
+ 
+padding-top: 94px;
+padding-left: 215px;
+padding-right: 215px;
  }
 
 .list-skills:not(:last-child) {
@@ -151,28 +172,20 @@ padding: 94px 215px;
     text-align: left;
 }
 .work {
-    background-color: red;
+    
     margin: 0;
 }
 .work-title {
     margin: 0;
     padding-bottom: 50px;
 }
-.work-img:first-child
-{
-    padding-left: 215px;
-}
-    .work-img:last-child {
-    padding-right: 215px; }
 
 .work-img:not(:last-child) {
     margin-right: 30px;
 
  }
  
-.list {
-    list-style: none; 
-}
+
 .site-nav__link {
 color: rgb(255, 255, 255);
 
@@ -233,7 +246,7 @@ color: var(--blue);
 }
 .team-title {
     margin: 0;
-    padding-top: 94px;
+   
     padding-bottom: 50px;
 }
 .team-img {
@@ -246,13 +259,7 @@ color: var(--blue);
 
 }
 
-.team-img:first-child {
-   margin-left: 215px;
-}
 
-.team-img:last-child {
-    margin-right: 215px;
-}
 .our-team {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -279,6 +286,10 @@ color: var(--blue);
 }
 .card-name {
     font-size: 18px;
+
+    margin-top: 20px;
+    margin-left: 24px;
+   
 }
 .button,
 .description,
@@ -288,6 +299,14 @@ color: var(--blue);
 }
 .description {
     line-height: 1.88;
+
+    margin-left: 24px;
+    margin-bottom: 20px;
+
+
+}
+.main-portlio {
+    margin-bottom: 94px;
 }
 .subtitle {
     color: var(--hcolor);
@@ -302,24 +321,72 @@ color: var(--blue);
     font-weight: 500;
     font-family: var(--primary-font);
     line-height: 1.62;
+    border: 0;
+    border-radius: 4px;
 }
+.filter {
+    width: 575px;
+   margin: auto;
+}
+.filter-button:not(:last-child) {
+    margin-right: 8px;
+}
+.cards {
+    width: 100%;
+    display: flex;
+   
+    flex-wrap: wrap;
+        gap: 30px;
+    padding-top: 34px;
+   margin-bottom: 94px;
+   
+}
+
+.card-product {
+   width: 30%;
+   
+}
+
+
 .button:hover,
 .button:focus {
     color: var(--main-bgcolor);
     background-color: var(--blue);
     
 }
-.button, .promo-button {
-    cursor: pointer;
-} 
+.current {
+    color: var(--blue);
+}
 
+.logo-foot {
+    display: block;
+    width: 145px;
+   padding-top: 60px;
+    margin-left: 215px;
+}
 
 .foot-contact {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
-}
+ }
 .address {
     font-style: normal;
+    padding-top: 20px;
+    padding-left: 215px;
+    padding-bottom: 60px;
+    
+  
+}
+.address-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
+    width: 231px;
+    
+
+}
+.address-item:not(:last-child) {
+margin-bottom: 10px;
 }
 .map {
     color:rgb(255, 255, 255);
