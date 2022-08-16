@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,35 +20,36 @@
   <body>
     <header>
       <nav class="site-nav">
-        <ul class="list">
-          <li>
-            <a class="logo-head link" href="/index.html"
+         <a class="logo-head link" href="/index.html"
               ><span class="blue-logo">Web</span>Studio</a
             >
-          </li>
-          <li><a class="site-nav__link" href="./index.html">Студія</a></li>
+        <ul class="list">
+           
+          <li class="menu"><a class="site-nav__link" href="./index.html">Студія</a></li>
 
-          <li>
+          <li class="menu">
             <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li><a class="site-nav__link" href="">Контакти</a></li>
+          <li class="menu"><a class="site-nav__link" href="">Контакти</a></li>
         </ul>
-        <ul class="list">
-          <li>
+        <ul class="list  ">
+          <li class="contacts"> 
             <a class="head-contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="head-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="contacts">
+            <a class="head-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h1>Портфолiо</h1>
-        <ul class="list"> 
+        <h1  class="title none-display">Портфолiо</h1>
+        <ul class="list">
           <li><button type="button" class="button">Усі</button></li>
           <li><button type="button" class="button">Веб-сайти</button></li>
           <li><button type="button" class="button">Додатки</button></li>

@@ -17,6 +17,10 @@
 
   
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: var(--main-bgcolor);
     color: var(--pcolor);
@@ -24,7 +28,46 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    outline: 2px blueviolet;
+    text-align: center;
 
+}
+.logo-head {
+    margin-right: 93px;
+    margin-left: 215px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+.list{
+    margin: 0px;
+}
+.contacts:first-child{
+    margin-left: 344px;
+}
+.contacts:nth-child(2) {
+     margin-left: 50px;
+}
+.list .menu:not(:last-child) {
+    margin-right: 50px;
+}
+.menu,
+.contacts {
+    margin: 32px 0;
+}
+.head-contact {
+display: block;
+}
+.site-nav {
+    display: flex;
+}
+.list {
+    display: flex;
+}
 .link,
 .site-nav__link,
 .head-contact
@@ -34,10 +77,33 @@ body {
 .head-contact {
     color: var(--pcolor);
 }
+.promo {
+    outline: 15px violet;
+    width: 1600px;
+    display: flex ;
+    flex-direction: column;
+}
 .promo, .foot {
     background-color: var(--bgcolor);
     
 }
+.promo-name {
+   margin: 0;
+   padding-top: 200px;
+    padding-bottom: 30px;
+
+}
+.promo-button {
+    padding: 0;
+
+    margin-top: 30px;
+    margin-bottom: 200px;
+    margin-left: 692px;
+    margin-right: 692px;
+    width: 216px;
+    
+}
+
 .promo-name,
 .promo-button,
 .card-name {
@@ -71,7 +137,39 @@ body {
 {
     background-color: #188CE8;
 }
+.skills {
+  background-color: violet;
+padding: 94px 215px;
 
+ }
+
+.list-skills:not(:last-child) {
+    margin-right: 30px;
+}
+.skls-ttl,
+.skills-txt {
+    text-align: left;
+}
+.work {
+    background-color: red;
+    margin: 0;
+}
+.work-title {
+    margin: 0;
+    padding-bottom: 50px;
+}
+.work-img:first-child
+{
+    padding-left: 215px;
+}
+    .work-img:last-child {
+    padding-right: 215px; }
+
+.work-img:not(:last-child) {
+    margin-right: 30px;
+
+ }
+ 
 .list {
     list-style: none; 
 }
@@ -124,22 +222,55 @@ color: var(--blue);
     font-size: 14px;
     
 }
-.our-team-main {
-    background-color: var(--ourbgcolor);
+.none-display {
+    display: none;
 }
-.our-team {
+
+.team {
+    background-color: var(--ourbgcolor);
     color: var(--hcolor);
         font-size: 16px;
 }
+.team-title {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.team-img {
+    background-color: #ffffff;
+    margin-bottom: 94px;
+}
+
+.team-img:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.team-img:first-child {
+   margin-left: 215px;
+}
+
+.team-img:last-child {
+    margin-right: 215px;
+}
+.our-team {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 [lang="en"] {
     font-size: 16px;
     line-height: 1.18;
+    margin: 0;
+    margin-bottom: 30px;
+
 }
+
 .title {
     line-height: 1.14;
     text-transform: uppercase;
 }
-.title-txt {
+.skills-txt {
     line-height: 1.71;
 }
 .title,
