@@ -218,9 +218,11 @@ body {
 
 .skills-item {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .list-skills {
-  width: 270px;
+  
    flex-basis: calc((100% - 90px) / 4);
   
 }
@@ -305,7 +307,7 @@ body {
   display: flex;
   justify-content: center;
 
-  width: 575px;
+
   margin: auto;
   margin-bottom: 50px;
 }
